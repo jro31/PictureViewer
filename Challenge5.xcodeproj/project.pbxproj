@@ -23,6 +23,7 @@
 		203018B721258A560012AE6F /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 203018AD21258A560012AE6F /* nssl0033.jpg */; };
 		203018B821258A560012AE6F /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 203018AE21258A560012AE6F /* nssl0034.jpg */; };
 		203018BA212593FE0012AE6F /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203018B9212593FE0012AE6F /* PictureCell.swift */; };
+		203018BC2125AC800012AE6F /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203018BB2125AC800012AE6F /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		203018AD21258A560012AE6F /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		203018AE21258A560012AE6F /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		203018B9212593FE0012AE6F /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		203018BB2125AC800012AE6F /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				20301892212589BF0012AE6F /* AppDelegate.swift */,
 				20301894212589BF0012AE6F /* ViewController.swift */,
+				203018BB2125AC800012AE6F /* PictureViewController.swift */,
 				20301896212589BF0012AE6F /* Main.storyboard */,
 				203018B9212593FE0012AE6F /* PictureCell.swift */,
 				20301899212589C20012AE6F /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20301895212589BF0012AE6F /* ViewController.swift in Sources */,
+				203018BC2125AC800012AE6F /* PictureViewController.swift in Sources */,
 				20301893212589BF0012AE6F /* AppDelegate.swift in Sources */,
 				203018BA212593FE0012AE6F /* PictureCell.swift in Sources */,
 			);

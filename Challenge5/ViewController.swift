@@ -8,6 +8,8 @@ class ViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Select image:"
+        
         let fileManager = FileManager.default
         let picturePath = Bundle.main.resourcePath!
         let picture = try! fileManager.contentsOfDirectory(atPath: picturePath)
@@ -27,7 +29,20 @@ class ViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Picture", for: indexPath) as! PictureCell
+        
+        cell.pictureTitle.text = pictures[indexPath.row]
+        
+        let imageToLoad = pictures[indexPath.row]
+        cell.imageView.image = UIImage(named: imageToLoad)
+        
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let viewController = storyboard?.instantiateViewController(withIdentifier: "BigPicture") as? PictureViewController {
+            viewController.selectedPicture = pictures[indexPath.row]
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
